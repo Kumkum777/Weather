@@ -142,6 +142,9 @@ button:hover{
   color: #fff;
   font-weight: 500;
 }
+.big{
+font-size: 27px;
+}
 
 span{
   font-size: 15px;
