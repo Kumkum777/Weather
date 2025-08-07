@@ -27,7 +27,7 @@ const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=
   const sunsetTime = sunsetUTC.getHours().toString().padStart(2,'0') + ':' + sunsetUTC.getMinutes().toString().padStart(2,'0') ;
 
   const result = document.querySelector(
-    '.result').innerHTML=`<big>${temp}°C</big> <br>
+    '.result').innerHTML=`<pre>${temp}°C</pre> <br>
    <span>✿ Feels like :- ${feels_like} </span>
    <br>
    <div>
