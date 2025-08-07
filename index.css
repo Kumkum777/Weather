@@ -51,7 +51,7 @@ button{
   height: 50px;
   width:40%;
   outline: 0;
-  font-size: 18px;
+  font-size: 24px;
   border-radius: 15px;
   border-color: #fff;
   margin-top: 20px;
@@ -72,6 +72,10 @@ button:hover{
 }
 span{
   font-size: 16px;
+}
+
+p{
+  font-size: 32px;
 }
 @media only screen and (max-width: 768px) {
   
@@ -123,7 +127,7 @@ button{
   height: 50px;
   width:40%;
   outline: 0;
-  font-size: 16px;
+  font-size: 24px;
   border-radius: 15px;
   border-color: #fff;
   margin-top: 20px;
@@ -142,11 +146,12 @@ button:hover{
   color: #fff;
   font-weight: 500;
 }
-p{
-font-size: 27px;
-}
 
 span{
   font-size: 15px;
+}
+p{
+  font-size: 32px;
+  margin: 0;
 }
 }
