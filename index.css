@@ -82,7 +82,7 @@ p{
 @media only screen and (max-width: 768px) {
   
 body{
-  background-color: rgb(24, 222 , 255);
+  background-color: rgb(124, 222 , 255);
   min-height: 100vh;
   display: flex;
   align-items: center;
