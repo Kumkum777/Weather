@@ -6,7 +6,7 @@
 overflow:hidden;
 }
 body{
-  background-color: #000;
+  background-color: rgb(12, 219 ,255);
   min-height: 100vh;
   display: flex;
   align-items: center;
