@@ -39,17 +39,18 @@ const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=
     `;
 
       const weatherBox = document.getElementById("weatherBox");
-        if (temp<19) {
+        if (temp<=20) {
           weatherBox.src = "pexels-ekamelev-813871.jpg";
           weatherBox.alt = "sunny";
-        } else if(temp>20 && temp<30) {
+        } else if(temp>20 && temp<=30) {
           weatherBox.src = "pexels-akhil-saji-2152011731-33564685.jpg";
           weatherBox.alt = "cloudy";
         }
-        else if(temp>31){
+        else if(temp>30){
           weatherBox.src = "pexels-pixabay-301599.jpg";
           weatherBox.alt = "cloudy";
         }
 }
 weatherr();
+
 checkWeather() ;
