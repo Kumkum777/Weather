@@ -26,6 +26,8 @@ const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=
   const sunriseTime = sunriseUTC.getHours().toString().padStart(2,'0') + ':' + sunriseUTC.getMinutes().toString().padStart(2,'0') ;
   const sunsetTime = sunsetUTC.getHours().toString().padStart(2,'0') + ':' + sunsetUTC.getMinutes().toString().padStart(2,'0') ;
 
+
+
   const result = document.querySelector(
     '.result').innerHTML=`<p>${temp}°C</p>
    <span>✿ Feels like :- ${feels_like}°C </span>
@@ -35,6 +37,19 @@ const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=
     <span>SunRise time :- ${sunriseTime} , 
     SunSet time :- ${sunsetTime}</span>
     `;
-}
 
+      const weatherBox = document.getElementById("weatherBox");
+        if (temp<19) {
+          weatherBox.src = "pexels-ekamelev-813871.jpg";
+          weatherBox.alt = "sunny";
+        } else if(temp>20 && temp<30) {
+          weatherBox.src = "pexels-akhil-saji-2152011731-33564685.jpg";
+          weatherBox.alt = "cloudy";
+        }
+        else if(temp>31){
+          weatherBox.src = "pexels-pixabay-301599.jpg";
+          weatherBox.alt = "cloudy";
+        }
+}
+weatherr();
 checkWeather() ;
