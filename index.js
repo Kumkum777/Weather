@@ -33,17 +33,17 @@ async function checkWeather() {
 
   const result = (document.querySelector(
     ".result"
-  ).innerHTML = `<p>${temp}°C</p>
+  ).innerHTML = `<pre>${temp}°C</pre>
    <span>✿ Feels like :- ${feels_like}°C </span>
    <div class="bottom">
-   <div>
+   <div id="k">
     ${City} <span>${country}</span></div>
     
-  <div> ${wind} <span>m/s</span></div>
+  <div id="k"> ${wind} <span>m/s</span></div>
   </div>
-  <div class="bottom-bottom">
-    <span>SunRise time :- ${sunriseTime} </span>   <span>
-    SunSet time :- ${sunsetTime}</span>
+  <div class="bottomText">
+    <span>SunRise time:- ${sunriseTime} </span>   <span>
+    SunSet time:- ${sunsetTime}</span>
     </div>
     `);
 
